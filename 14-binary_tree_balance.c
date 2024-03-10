@@ -12,6 +12,9 @@ int binary_tree_balance(const binary_tree_t *tree)
 	int abs_height_right = -1;
 	int bal_factor;
 
+	if (tree == NULL)
+		return (0);
+
 	count_level(tree->left, 0, &abs_height_left);
 	count_level(tree->right, 0, &abs_height_right);
 
