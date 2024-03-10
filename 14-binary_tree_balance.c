@@ -14,7 +14,6 @@ int binary_tree_balance(const binary_tree_t *tree)
 
 	count_level(tree->left, 0, &abs_height_left);
 	count_level(tree->right, 0, &abs_height_right);
-	printf("%d ", abs_height_right);
 
 	bal_factor = abs_height_left - abs_height_right;
 
